@@ -1,0 +1,20 @@
+<header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <h1>John Doe</h1>
+    </div>
+    
+    <nav class="nav" [class.active]="isMenuOpen">
+      <a href="#about" (click)="closeMenu()">About</a>
+      <a href="#projects" (click)="closeMenu()">Projects</a>
+      <a href="#skills" (click)="closeMenu()">Skills</a>
+      <a href="#contact" (click)="closeMenu()">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
